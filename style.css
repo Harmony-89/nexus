@@ -44,12 +44,18 @@ header{
 .head-left button:hover{
     opacity: .6;
 }
-.head-right a{
+a.links-right{
     text-decoration: none;
     color: #fff;
     padding-left: 25px;
     font-size: 15px;
     text-transform: uppercase;
+    position: relative;
+    transition: .3s;
+}
+a.links-right:hover{
+    color: rgb(236, 248, 13);
+    top: -2px;
 }
 .hero-section{
     position: relative;
@@ -528,8 +534,8 @@ header{
     }
     .list-links a{
         text-decoration: none;
-        color: white;
-        background-color: #518c99;
+        color: rgb(0, 0, 0);
+        background-color: #b5cc04;
         border-radius: 20px;
         padding: 15px;
         width: 270px;
@@ -567,7 +573,7 @@ header{
     }
     .switch{
         height: 4.5px;
-        background-color: rgb(80, 136, 242);
+        background-color: #bccb4cfd;
         width: 34px;
         position: relative;
         /* border: 2px solid crimson; */
@@ -576,7 +582,7 @@ header{
         transition: .3s ease;
     }
     body.active .switch{
-        background-color: #518c99;
+        background-color: #bccb4cfd;
     }
     .switch:nth-child(1){
         margin-top: 10.5px;
@@ -631,7 +637,7 @@ header{
         position: absolute;
         font-size: 3.6rem;
         max-width:250px;
-        bottom: 130px;
+        bottom: 0px;
         right: 0px;
         left: -84px;
         transform: rotate(90deg);
@@ -665,9 +671,7 @@ header{
     }
 
 
-    .about-section{
-        
-    }
+   
         
     .about-section p{
         margin-top: 150px;
@@ -727,8 +731,7 @@ header{
     }
 
 
-    .contact-section{  
-    }
+
     .contact-section p{
         padding-bottom: 3px;
         border-bottom: 2px solid #fff;
